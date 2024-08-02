@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Responsive Shoes Website || Web Addicted </title>  -->
+
+    <!--     title adding process
+         -->
+         <title>Shoes</title>
+         <meta name="title" content="Tvflix"> 
+         <meta class="description" content="Tvflix is most popular movie app.">
+         <!--Favicon-->
+         <link rel="shortcut icon" href="data:image/jpeg;base64,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" type="image/svg+xml">
+         <!--
+
+
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- swiper js cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- header section starts -->
+
+    <header class="header">
+
+        <a href="#" class="logo"> <i class="fas fa-shoe-prints"></i> shoes</a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#products">products</a>
+            <a href="#featured">featured</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" name="" id="search-box" placeholder="search here...">
+            <label class="fas fa-search"></label>
+        </form>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts -->
+
+    <section class="home" id="home">
+
+        <div class="slides-container">
+            
+            <div class="slide active">
+                <div class="content">
+                    <span>new winter</span>
+                    <h3>shoes collection</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim consequatur reprehenderit.</p>
+                    <button class="btn">
+                        <span>shop now</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                <div class="image">
+                    <img src="images/header-1.png" alt="">
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="content">
+                    <span>new winter</span>
+                    <h3>shoes collection</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim consequatur reprehenderit.</p>
+                    <button class="btn">
+                        <span>shop now</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                <div class="image">
+                    <img src="images/header-2.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+        <div id="slide-next" onclick="next()" class="fas fa-angle-right"></div>
+        <div id="slide-prev" onclick="prev()" class="fas fa-angle-left"></div>
+
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- latest product section starts -->
+
+    <section class="products" id="products">
+
+        <h1 class="heading"><span>latest</span> products</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/product-1.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>nike shoes</h3>
+                    <div class="price">$170.00</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(50)</span>
+                    </div>
+                    <a href="#" class="btn"> <i class="far fa-heart"></i></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/product-2.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>nike shoes</h3>
+                    <div class="price">$170.00</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(50)</span>
+                    </div>
+                    <a href="#" class="btn"> <i class="far fa-heart"></i></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/product-3.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>nike shoes</h3>
+                    <div class="price">$170.00</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(50)</span>
+                    </div>
+                    <a href="#" class="btn"> <i class="far fa-heart"></i></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/product-4.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>nike shoes</h3>
+                    <div class="price">$170.00</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(50)</span>
+                    </div>
+                    <a href="#" class="btn"> <i class="far fa-heart"></i></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/product-5.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>nike shoes</h3>
+                    <div class="price">$170.00</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(50)</span>
+                    </div>
+                    <a href="#" class="btn"> <i class="far fa-heart"></i></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/product-6.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>nike shoes</h3>
+                    <div class="price">$170.00</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(50)</span>
+                    </div>
+                    <a href="#" class="btn"> <i class="far fa-heart"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- latest product section ends -->
+
+    <!-- banner section starts -->
+
+    <section class="banner-container">
+
+        <div class="banner">
+            <img src="images/banner1.jpg" alt="">
+            <div class="content">
+                <span>limited offer</span>
+                <h3>upto 40% off</h3>
+                <button class="btn">
+                    <span>shop now</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="banner">
+            <img src="images/banner2.jpg" alt="">
+            <div class="content">
+                <span>limited offer</span>
+                <h3>upto 40% off</h3>
+                <button class="btn">
+                    <span>shop now</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- banner section ends -->
+
+    <!-- featured product section starts -->
+
+    <section class="featured" id="featured">
+
+        <h1 class="heading"><span>featured</span> products</h1>
+
+        <div class="swiper featured-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide">
+                    <span class="discount">-25%</span>
+                    <div class="image">
+                        <img src="images/product-1.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>nike shoes</h3>
+                        <div class="price">$20.00</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <a href="#" class="btn">add to cart</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <span class="discount">-25%</span>
+                    <div class="image">
+                        <img src="images/product-2.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>nike shoes</h3>
+                        <div class="price">$20.00</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <a href="#" class="btn">add to cart</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <span class="discount">-25%</span>
+                    <div class="image">
+                        <img src="images/product-3.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>nike shoes</h3>
+                        <div class="price">$20.00</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <a href="#" class="btn">add to cart</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <span class="discount">-25%</span>
+                    <div class="image">
+                        <img src="images/product-4.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>nike shoes</h3>
+                        <div class="price">$20.00</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <a href="#" class="btn">add to cart</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <span class="discount">-25%</span>
+                    <div class="image">
+                        <img src="images/product-5.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>nike shoes</h3>
+                        <div class="price">$20.00</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <a href="#" class="btn">add to cart</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <span class="discount">-25%</span>
+                    <div class="image">
+                        <img src="images/product-6.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>nike shoes</h3>
+                        <div class="price">$20.00</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <a href="#" class="btn">add to cart</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
+
+    </section>
+
+    <!-- featured product section ends -->
+
+    <!-- review section starts -->
+
+    <section class="review" id="review">
+
+        <h1 class="heading"><span>client's</span> review</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/pic-2.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Kartik gupta</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis dolorem optio at quisquam tenetur ipsum.</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/pic-2.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Shailendra pratap</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis dolorem optio at quisquam tenetur ipsum.</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/pic-3.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>lunna tun</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis dolorem optio at quisquam tenetur ipsum.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- review section ends -->
+
+    <!-- send gift section starts -->
+
+    <section class="send">
+
+        <div class="container">
+
+            <div class="content">
+                <h2 class="title">send gift now</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur culpa quibusdam porro.</p>
+                <form action="">
+                    <input type="text" class="input" placeholder="House Address">
+                    <a href="#" class="btn">send</a>
+                </form>
+            </div>
+            <div class="image">
+                <img src="images/Send gift.png" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- send gift section ends -->
+
+    <!-- contact section starts -->
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading"><span>contact</span> us</h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="images/contact.png" alt="">
+            </div>
+
+            <form action="">
+                <h3>get in touch</h3>
+                <div class="inputBox">
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Your Email">
+                </div>
+                <div class="inputBox">
+                    <input type="number" placeholder="Your Number">
+                    <input type="text" placeholder="Your Subject">
+                </div>
+                <textarea placeholder="Your Message" cols="30" rows="10"></textarea>
+                <input type="submit" value="send message" class="btn">
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- contact section ends -->
+
+    <!-- footer section starts -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>about us</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore magnam.</p>
+            </div>
+
+            <div class="box">
+                <h3>our services</h3>
+                <a href="#">pricing</a>
+                <a href="#">discount</a>
+                <a href="#">refund policy</a>
+                <a href="#">shipping mode</a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#">home</a>
+                <a href="#">products</a>
+                <a href="#">featured</a>
+                <a href="#">review</a>
+            </div>
+
+            <div class="box">
+                <h3>social links</h3>
+                <a href="#"> <i class="fab fa-facebook-f"></i> facebook</a>
+                <a href="#"> <i class="fab fa-twitter"></i> twitter</a>
+                <a href="#"> <i class="fab fa-instagram"></i> instagram</a>
+                <a href="#"> <i class="fab fa-linkedin"></i> linkedin</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="credit">
+        &copy; copyright @ ashirvadpatel94
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- swiper js cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="script.js"></script>
+</body>
+</html>
